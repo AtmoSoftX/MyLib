@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --color-primary: rgb(13,110,253);
+}
+
+@for $i from 1 through 100{
+  .p-#{$i*1} {
+    padding: #{$i*1}px;
+  }
+}
+@for $i from 1 through 100{
+  .pr-#{$i*1} {
+    padding-right: #{$i*1}px;
+  }
+}
+@for $i from 1 through 100{
+  .mt-#{$i*1} {
+    margin-top: #{$i*1}px;
+  }
+}
+@for $i from 1 through 100{
+  .ml-#{$i*1} {
+    margin-left: #{$i*1}px;
+  }
+}
+@for $i from 1 through 100{
+  .mr-#{$i*1} {
+    margin-right: #{$i*1}px;
+  }
+}
+@for $i from 1 through 100{
+  .mb-#{$i*1} {
+    margin-bottom: #{$i*1}px;
+  }
+}
+.img-nav{
+  width: 56px;
+  border-radius: 5px;
+}
+.comp-btn{
+  width: 100%;
+  background: white;
+  font-size: 28px;
+  padding: 20px;
+  font-weight: 500;
+  color: var(--color-primary);
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+.border-right-dark{
+  border-right: 5px solid var(--color-primary);
+}
+html{
+  scroll-behavior: smooth;
+}
+.sticky-top-nav{
+  position: sticky;
+  top: 67px;
+}
+.primary{
+  --msg-color: 13,110,253;
+}
+.low-fw{
+  font-size: 22px;
+  font-weight: 400;
+}

@@ -1,0 +1,199 @@
+<nav class="primary-nav ff-sans">
+  <span class="nav-span">
+    <h1 class="primary-nav-h1">On This Page</h1>
+    <span space></span>
+    <button class="primary-nav-btn" collapse="#collapse6">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse6" class="collapse block-child">
+    <a (click)="toElement('Navbar-Information')" routerLinkActive="nav-primary" class="primary-nav-a nav-primary">Navbar Information</a>
+    <a (click)="toElement('Collapsible-Navbar')" routerLinkActive="nav-primary" class="primary-nav-a">Collapsible Navbar</a>
+    <a (click)="toElement('Multiple-Collapsible-Navbar')" routerLinkActive="nav-primary" class="primary-nav-a">Multiple Collapsible Navbar</a>
+    <a (click)="toElement('Normal-Navbar')" routerLinkActive="nav-primary" class="primary-nav-a">Normal Navbar</a>
+  </div>
+</nav>
+<div class="p-10 ff-sans">
+  <h2 id="Navbar-Information">Navbar Information</h2>
+  <p class="mt-10 low-fw">
+    MyLib have a css and js of collapse.
+    You can use Navbar,
+    I make a collapse in Navbar,
+    Navbar has many colors like grey,
+    black, primary.
+  </p>
+  <h1 class="mt-20 mb-10">Navbar Example</h1>
+  <h2 class="mb-20" id="Collapsible-Navbar">Collapsible Navbar</h2>
+  <nav class="primary-nav">
+    <span class="nav-span">
+      <h1 class="primary-nav-h1">Navbar</h1>
+      <span space></span>
+      <button class="primary-nav-btn" collapse="#collapse3">
+        <span class="material-icons">menu</span>
+      </button>
+    </span>
+    <div id="collapse3" class="collapse block-child">
+      <a class="primary-nav-a nav-primary">Home</a>
+      <a class="primary-nav-a">About</a>
+    </div>
+  </nav>
+  <nav class="black-nav">
+    <span class="nav-span">
+      <h1 class="black-nav-h1">Navbar</h1>
+      <span space></span>
+      <button class="nav-btn" collapse="#collapse4">
+        <span class="material-icons">menu</span>
+      </button>
+    </span>
+    <div id="collapse4" class="collapse block-child">
+      <a class="nav-a nav-black">Home</a>
+      <a class="nav-a">About</a>
+    </div>
+  </nav>
+  <nav class="grey-nav">
+    <span class="nav-span">
+      <h1 class="grey-nav-h1">Navbar</h1>
+      <span space></span>
+      <button class="nav-btn" collapse="#collapse5">
+        <span class="material-icons">menu</span>
+      </button>
+    </span>
+    <div id="collapse5" class="collapse block-child">
+      <a class="grey-nav-a nav-grey">Home</a>
+      <a class="grey-nav-a">About</a>
+    </div>
+  </nav>
+  <p class="mt-20 mb-10 ml-10 low-fw">
+    Primary Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="primary-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="primary-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="primary-nav-btn" collapse="#collapse">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse" class="collapse block-child">
+    &lt;a class="primary-nav-a nav-primary">Home&lt;/a>
+    &lt;a class="primary-nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Black Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="black-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="black-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="nav-btn" collapse="#collapse">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse" class="collapse block-child">
+    &lt;a class="nav-a nav-black">Home&lt;/a>
+    &lt;a class="nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Grey Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="grey-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="grey-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="nav-btn" collapse="#collapse">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse" class="collapse block-child">
+    &lt;a class="grey-nav-a nav-grey">Home&lt;/a>
+    &lt;a class="grey-nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    If you want to use multiple Navbar in a page upper code will not work.
+    Because this code target a collapse id.
+    Change the div id to collapse2
+    and also change collapse attribute to
+    collapse2 like
+  </p>
+  <h2 class="mt-10" id="Multiple-Collapsible-Navbar">Multiple Collapsible Navbar</h2>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Primary Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="primary-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="primary-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="primary-nav-btn" collapse="#collapse2">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse2" class="collapse block-child">
+    &lt;a class="primary-nav-a nav-primary">Home&lt;/a>
+    &lt;a class="primary-nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Black Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="black-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="black-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="nav-btn" collapse="#collapse2">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse2" class="collapse block-child">
+    &lt;a class="nav-a nav-black">Home&lt;/a>
+    &lt;a class="nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <p id="div" class="mt-10 mb-10 ml-10 low-fw">
+    Grey Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="grey-nav">
+  &lt;span class="nav-span">
+    &lt;h1 class="grey-nav-h1">Navbar&lt;/h1>
+    &lt;span space>&lt;/span>
+    &lt;button class="nav-btn" collapse="#collapse2">
+      &lt;span class="material-icons">menu&lt;/span>
+    &lt;/button>
+  &lt;/span>
+  &lt;div id="collapse2" class="collapse block-child">
+    &lt;a class="grey-nav-a nav-grey">Home&lt;/a>
+    &lt;a class="grey-nav-a">About&lt;/a>
+  &lt;/div>
+&lt;/nav></code></pre>
+  <h1 class="mt-20 mb-10">Navbar Example</h1>
+  <h2 class="mb-20" id="Normal-Navbar">Normal Navbar</h2>
+  <nav class="primary-nav">
+    <h1 class="primary-nav-h1">Navbar</h1>
+  </nav>
+  <nav class="black-nav">
+    <h1 class="black-nav-h1">Navbar</h1>
+  </nav>
+  <nav class="grey-nav">
+    <h1 class="grey-nav-h1">Navbar</h1>
+  </nav>
+  <p class="mt-20 mb-10 ml-10 low-fw">
+    Primary Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="primary-nav">
+  &lt;h1 class="primary-nav-h1">Navbar&lt;/h1>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Black Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="black-nav">
+  &lt;h1 class="black-nav-h1">Navbar&lt;/h1>
+&lt;/nav></code></pre>
+  <p class="mt-10 mb-10 ml-10 low-fw">
+    Grey Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;nav class="grey-nav">
+  &lt;h1 class="grey-nav-h1">Navbar&lt;/h1>
+&lt;/nav></code></pre>
+</div>

@@ -1,0 +1,99 @@
+<nav class="primary-nav ff-sans">
+  <span class="nav-span">
+    <h1 class="primary-nav-h1">On This Page</h1>
+    <span space></span>
+    <button class="primary-nav-btn" collapse="#collapse6">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse6" class="collapse block-child">jdjd</div>
+</nav>
+<div class="p-10 ff-sans">
+  <h2 id="Navbar-Information">Snackbar Information</h2>
+  <p class="mt-10 low-fw">
+    Mylib have a css and js of snackbar. This is very simple to use. This is
+    fully customable. You can change the Background color, Body color, Off
+    color, Off bgcolor, Off focuscolor.
+  </p>
+  <h1 class="mt-20 mb-10">Snackbar Example</h1>
+  <h2 class="mb-10">Normal Snackbar</h2>
+  <button
+    class="btn primary-btn"
+    onclick="msg('Message open successfully!!!', 'OK');"
+  >
+    Open Message
+  </button>
+  <p class="mt-20 mb-10 ml-10 low-fw">Snackbar Code</p>
+  <pre><code class="language-html">&lt;button class="btn primary-btn" onclick="msg('Message open successfully!!!', 'OK');"></code></pre>
+  <h1 class="mt-20 mb-10">Snackbar Example</h1>
+  <h2 class="mb-10">Default Multiple Snackbar</h2>
+  <div class="block-child child-mb-5">
+    <button
+      class="btn red-btn"
+      onclick="msg('Message open successfully!!!', 'OK', 'msg-red')"
+    >
+      Open Message
+    </button>
+    <button
+      class="btn primary-btn"
+      onclick="msg('Message open successfully!!!', 'OK');"
+    >
+      Open Message
+    </button>
+    <button
+      class="btn green-btn"
+      onclick="msg('Message open successfully!!!', 'OK', 'msg-green');"
+    >
+      Open Message
+    </button>
+    <button
+      class="btn yellow-btn"
+      onclick="msg('Message open successfully!!!', 'OK', 'msg-yellow');"
+    >
+      Open Message
+    </button>
+  </div>
+  <p class="mt-20 mb-10 ml-10 low-fw">Snackbar Code</p>
+  <pre><code class="language-html">&lt;button class="btn red-btn" onclick="msg('Message open successfully!!!', 'OK', 'msg-red');">Open Message&lt;/button>
+&lt;button class="btn primary-btn" onclick="msg('Message open successfully!!!', 'OK');">Open Message&lt;/button>
+&lt;button class="btn green-btn" onclick="msg('Message open successfully!!!', 'OK', 'msg-green');">Open Message&lt;/button>
+&lt;button class="btn yellow-btn" onclick="msg('Message open successfully!!!', 'OK', 'msg-yellow');">Open Message&lt;/button></code></pre>
+  <p class="mt-20 mb-10 ml-10 low-fw">Snackbar Code In CSS</p>
+  <p class="m-15 low-fw">
+    Change the button last params of msg fuction to class which you want and
+    define in css file or style tag and if you want primary msg use normal
+    snackbar.
+  </p>
+  <pre><code class="language-css">.red-msg{{ '{' }}
+  --msg-bgcolor: 255,0,0;
+  --msg-focus-color: 255,0,0;
+{{ '}' }}
+.green-msg{{ '{' }}
+  --msg-bgcolor: 0,255,0;
+  --msg-focus-color: 0,255,0;
+{{ '}' }}
+.yellow-msg{{ '{' }}
+  --msg-bgcolor: 255,255,0;
+  --msg-focus-color: 255,255,0;
+{{ '}' }}</code></pre>
+  <p class="mt-20 mb-10 ml-10 low-fw">
+    Snackbar Code In Angular (styles.css / styles.scss / styles.sass)
+  </p>
+  <p class="m-15 low-fw">
+    Change the button last params of msg fuction to class which you want and
+    define in css file or style tag and if you want primary msg use normal
+    snackbar.
+  </p>
+  <pre><code class="language-css">.red-msg{{ '{' }}
+  --msg-bgcolor: 255,0,0;
+  --msg-focus-color: 255,0,0;
+{{ '}' }}
+.green-msg{{ '{' }}
+  --msg-bgcolor: 0,255,0;
+  --msg-focus-color: 0,255,0;
+{{ '}' }}
+.yellow-msg{{ '{' }}
+  --msg-bgcolor: 255,255,0;
+  --msg-focus-color: 255,255,0;
+{{ '}' }}</code></pre>
+</div>

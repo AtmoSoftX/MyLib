@@ -1,0 +1,50 @@
+<nav class="primary-nav ff-sans">
+  <span class="nav-span">
+    <h1 class="primary-nav-h1">On This Page</h1>
+    <span space></span>
+    <button class="primary-nav-btn" collapse="#collapse7">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse7" class="collapse block-child">
+    <a (click)="toElement('');">OkOk</a>
+  </div>
+</nav>
+<div class="p-10 ff-sans">
+  <h2 id="Navbar-Information">Ripple Information</h2>
+  <p class="mt-10 low-fw">
+    Mylib have a css and js of ripple
+    it is used to show user that the something is clicked like button is clicked
+    and this is mostly used for button.
+  </p>
+  <h1 class="mt-20 mb-10">Ripple Example</h1>
+  <h2 class="mt-5 low-fw mb-10">Default Ripple</h2>
+  <button ripple class="btn primary-btn">Ripple</button>
+  <p class="mt-20 mb-10 low-fw">
+    Ripple Code
+  </p>
+  <pre><code class="language-html">&lt;button class="btn primary-btn ripple">Ripple&lt;/button></code></pre>
+  <h2 class="mt-5 low-fw mb-10">Custom Ripple</h2>
+  <div class="block-child child-mb-5">
+  <button class="btn red-btn" ripple ripple-fade-delay="600" ripple-fade-time="250" ripple-remove-delay="850">Expand, then fade</button>
+  <button class="btn red-btn" ripple ripple-expand-style="cubic-bezier(.12,.69,.8,.32)">Little pause ripple</button>
+  <button class="btn red-btn" ripple ripple-fade-delay="250" ripple-expand-delay="250" ripple-remove-delay="1250">Delay ripple</button>
+  <button class="btn red-btn" ripple ripple-disabled>Disabled</button>
+  <button class="btn red-btn" ripple ripple-centered>Centered</button>
+  <button class="btn primary-btn unbounded" ripple>Unbounded</button>
+  <button class="btn primary-btn" ripple ripple-bg="rgba(255,0,0,.5)">Colored</button>
+  <button class="btn primary-btn" ripple ripple-fade-time="1500" ripple-expand-time="1000" ripple-remove-delay="1500">Slow</button>
+  <button class="btn primary-btn" ripple ripple-fade-time="500" ripple-expand-time="250" ripple-remove-delay="500">Fast</button>
+  <button class="btn primary-btn" ripple ripple-radius="50" ripple-fade-time="500" ripple-remove-delay="500">Define Radius</button>
+  </div>
+  <pre><code class="language-html">&lt;button class="btn red-btn" ripple ripple-fade-delay="600" ripple-fade-time="250" ripple-remove-delay="850">Expand, then fade&lt;/button>
+&lt;button class="btn red-btn" ripple ripple-expand-style="cubic-bezier(.12,.69,.8,.32)">Little pause ripple&lt;/button>
+&lt;button class="btn red-btn" ripple ripple-fade-delay="250" ripple-expand-delay="250" ripple-remove-delay="1250">Delay ripple&lt;/button>
+&lt;button class="btn red-btn" ripple ripple-disabled>Disabled&lt;/button>
+&lt;button class="btn red-btn" ripple ripple-centered>Centered&lt;/button>
+&lt;button class="btn primary-btn unbounded" ripple>Unbounded&lt;/button>
+&lt;button class="btn primary-btn" ripple ripple-bg="rgba(255,0,0,.5)">Colored&lt;/button>
+&lt;button class="btn primary-btn" ripple ripple-fade-time="1500" ripple-expand-time="1000" ripple-remove-delay="1500">Slow&lt;/button>
+&lt;button class="btn primary-btn" ripple ripple-fade-time="500" ripple-expand-time="250" ripple-remove-delay="500">Fast&lt;/button>
+&lt;button class="btn primary-btn" ripple ripple-radius="50" ripple-fade-time="500" ripple-remove-delay="500">Define Radius&lt;/button></code></pre>
+</div>

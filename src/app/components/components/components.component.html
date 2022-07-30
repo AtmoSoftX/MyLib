@@ -1,0 +1,16 @@
+<nav class="primary-nav ff-sans">
+  <span class="nav-span">
+    <h1 class="primary-nav-h1">Select Components</h1>
+    <span space></span>
+    <button class="primary-nav-btn" collapse="#collapse2">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse2" class="collapse block-child">
+    <a routerLink="/components/navbar" routerLinkActive="nav-primary" class="primary-nav-a">Navbar</a>
+    <a routerLink="/components/sidenav" routerLinkActive="nav-primary" class="primary-nav-a">Side Navbar</a>
+    <a routerLink="/components/snackbar" routerLinkActive="nav-primary" class="primary-nav-a">Snackbar</a>
+    <a routerLink="/components/ripple" routerLinkActive="nav-primary" class="primary-nav-a">Ripple</a>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,357 @@
+pre[class*="language-"] *::selection {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #fff;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco,"Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: rgb(130, 130, 130);
+}
+
+.token.punctuation {
+  color: #fff;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.tag,
+.token.doctype,
+.token.operator,
+.token.selector,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.token.unit,
+.token.important,
+.language-css .rule.token {
+  color: #f92672;
+}
+.token.selector .token.class {
+  color: #0f0;
+}
+
+.token.boolean,
+.token.number,
+.token.entity,
+.token.color.hexcode {
+  color: #ae81ff;
+}
+
+.token.attr-name,
+.token.name,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #0f0;
+}
+.token.string,
+.token.atrule,
+.token.attr-value,
+.token.selector .token.id,
+.token.pseudo-class,
+.token.pseudo-element {
+  color: #ff0;
+}
+
+.token.url,
+.token.variable {
+  color: #fff;
+}
+.token.class-name {
+  color: #fff;
+}
+.token.function {
+  color: #0f0;
+}
+.token.keyword,
+.token.property,
+.token.color,
+.token.operator.arrow,
+.language-css .function.token {
+  color: #66d9ef;
+}
+.language-bash .function.token {
+  color: #fff;
+}
+.language-bash .function.token:first-child {
+  color: #ff0;
+}
+.language-css {
+  color: #66d9ef !important;
+}
+.token.keyword.keyword-return {
+  color: #f92672;
+}
+.token.regex,
+.token.parameter,
+.language-css .token.url {
+  color: #fd7e14;
+}
+.language-css .token.url {
+  font-style: italic;
+}
+
+.language-css .function.token,
+.token.atrule .token.url .token.punctuation {
+  font-style: normal;
+}
+.language-css .token.url.string {
+  color: #ff0;
+  font-style: normal;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows {
+  pointer-events: all;
+}
+pre[id].linkable-line-numbers span.line-numbers-rows > span:before {
+  cursor: pointer;
+}
+pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+.token a {
+  color: inherit;
+}
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  top: 0.3em;
+  right: 0.2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: #bbb;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.2);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.token.punctuation.brace-hover,
+.token.punctuation.brace-selected {
+  border: 1px solid;
+}
+
+.rainbow-braces .token.punctuation.brace-level-1,
+.rainbow-braces .token.punctuation.brace-level-7 {
+  color: #fff;
+  opacity: 1;
+}
+.rainbow-braces .token.punctuation.brace-level-2,
+.rainbow-braces .token.punctuation.brace-level-8 {
+  color: #0f0;
+  opacity: 1;
+}
+.rainbow-braces .token.punctuation.brace-level-3,
+.rainbow-braces .token.punctuation.brace-level-9 {
+  color: #26f;
+  opacity: 1;
+}
+.rainbow-braces .token.punctuation.brace-level-4,
+.rainbow-braces .token.punctuation.brace-level-10 {
+  color: #f00;
+  opacity: 1;
+}
+.rainbow-braces .token.punctuation.brace-level-5,
+.rainbow-braces .token.punctuation.brace-level-11 {
+  color: #ff0;
+  opacity: 1;
+}
+.rainbow-braces .token.punctuation.brace-level-6,
+.rainbow-braces .token.punctuation.brace-level-12 {
+  color: #fd7e14;
+  opacity: 1;
+}
+.copy-to-clipboard-button {
+  border: 2px solid white !important;
+  color: white !important;
+  min-width: 60px !important;
+  height: 30px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  transition: 0.5s !important;
+}
+.copy-to-clipboard-button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+span.inline-color {
+  display: block;
+  height: 120%;
+  width: 120%;
+}
+span.inline-color-wrapper {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9ImdyYXkiIGQ9Ik0wIDBoMnYySDB6Ii8+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDBoMXYxSDB6TTEgMWgxdjFIMXoiLz48L3N2Zz4=);
+  background-position: center;
+  background-size: 110%;
+  display: inline-block;
+  height: 1.333ch;
+  width: 1.333ch;
+  margin: 0 0.333ch;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.css-bracket {
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #f5f5f5;
+  color: rgb(13,110,253);
+  font-family: Monospace !important;
+}

@@ -1,0 +1,19 @@
+<span class="hhhh">
+<nav class="black-nav ff-sans">
+  <span class="nav-span">
+    <img src="/assets/lib.png" routerLink="/home" alt="logo" class="img-nav">
+    <h1 class="black-nav-h1" routerLink="/home">MyLib</h1>
+    <span space></span>
+    <button class="nav-btn" collapse="#collapse">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse" class="collapse block-child">
+    <a routerLink="/home" class="nav-a" routerLinkActive="nav-black">Home</a>
+    <a routerLink="/components" routerLinkActive="nav-black" class="nav-a">Components</a>
+  </div>
+</nav>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+</span>

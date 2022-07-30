@@ -1,0 +1,75 @@
+<nav class="primary-nav ff-sans">
+  <span class="nav-span">
+    <h1 class="primary-nav-h1">On This Page</h1>
+    <span space></span>
+    <button class="primary-nav-btn" collapse="#collapse6">
+      <span class="material-icons">menu</span>
+    </button>
+  </span>
+  <div id="collapse6" class="collapse block-child">
+    jdjd
+  </div>
+</nav>
+<div class="p-10 ff-sans">
+  <h2 id="Navbar-Information">Side Navbar Information</h2>
+  <p class="mt-10 low-fw">
+    Mylib have a css and js of collapsing of
+    navbar side navbar etc. You can use side navbar easily,
+    this is used to collapse for left side but navbar used to collapse
+    for up side and navbar push anything to down while side navbar is used
+    to covers anything.
+  </p>
+  <h1 class="mt-20 mb-10">Side Navbar Example</h1>
+  <button class="btn black-btn" sidenav="#sidenav">Open</button>
+  <p class="mt-20 mb-10 ml-10 low-fw">
+    Side Navbar Code
+  </p>
+  <pre><code class="language-html">&lt;button class="btn black-btn" sidenav="#sidenav">
+&lt;aside class="sidenav" id="sidenav">
+  &lt;div class="p-10">
+    &lt;div class="d-flex align-items-center">
+      &lt;span class="ff-sans">Side Nav&lt;/span>
+      &lt;span class="flex-auto">&lt;/span>
+      &lt;button class="close btn-close trans-primary-btn" sidenav="#sidenav">&lt;/button>
+    &lt;/div>
+    &lt;div class="ff-sans mt-20">
+      This is side this is used add multiples links in a page.
+    &lt;/div>
+  &lt;/div>
+&lt;/aside>
+&lt;div class="bg-sidenav">&lt;/div></code></pre>
+  <p class="mt-20 low-fw">
+    If you want to use multiples side navbar in a page
+    the upper code position is last, copy and paste this code
+    on up of upper code.
+    And change the button sidenav attribute to #sidenav2 and also change
+    the aside tag id to sidenav2 like this
+    and div class bg-sidenav will use only 1 time in the last of document.
+  </p>
+  <pre><code class="language-html">&lt;button class="btn black-btn" sidenav="#sidenav">&lt;button>
+&lt;aside class="sidenav" id="sidenav2">
+  &lt;div class="p-10">
+    &lt;div class="d-flex align-items-center">
+      &lt;span class="ff-sans">Side Nav&lt;/span>
+      &lt;span class="flex-auto">&lt;/span>
+      &lt;button class="close btn-close trans-primary-btn" sidenav="#sidenav">&lt;/button>
+    &lt;/div>
+    &lt;div class="ff-sans mt-20">
+      This is side this is used add multiples links in a page.
+    &lt;/div>
+  &lt;/div>
+&lt;/aside></code></pre>
+<aside class="sidenav" id="sidenav">
+  <div class="p-10">
+    <div class="d-flex align-items-center">
+      <span class="ff-sans">Side Nav</span>
+      <span class="flex-auto"></span>
+      <button class="close btn-close trans-primary-btn" sidenav="#sidenav"></button>
+    </div>
+    <div class="ff-sans mt-20">
+      This is side this is used add multiples links in a page.
+    </div>
+  </div>
+</aside>
+<div class="bg-sidenav"></div>
+</div>
